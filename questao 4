@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+    
+  float g1,g2,g3,media_gasto;
+
+    printf( "informe o gasto do primeiro mes: \n");
+    scanf("%f", &g1);
+
+    printf( "informe o gasto do segundo mes: \n");
+    scanf("%f", &g2);
+
+    printf( "informe o gasto do segundo mes: \n");
+    scanf("%f", &g3);
+
+ media_gasto = (g1+g2+g3)/3;
+
+    printf("a media e %.2f", media_gasto);
+
+}
