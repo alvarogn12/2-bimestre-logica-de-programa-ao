@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+
+    float altura,pesoideal;
+
+    const float k = 72.7;
+    const int b = 58;
+  
+    printf("informe a altura \n") ;
+    scanf("%f", &altura);
+
+    pesoideal=k*altura-b;
+
+    printf("o peso ideal e %.2f",pesoideal);
+}
