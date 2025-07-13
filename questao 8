@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+float fahrenheit, grau_celsius;
+
+    printf("Qual a temperatura em graus celsius: \n");
+    scanf("%f", &grau_celsius);
+
+    fahrenheit = (grau_celsius * 1.8) + 32 ;
+
+    printf("Temperatura em  celsius: %.2f\n",grau_celsius);
+    printf("Temperatura transformada em fahrenheit: %.2f\n",fahrenheit);
+}
+   
