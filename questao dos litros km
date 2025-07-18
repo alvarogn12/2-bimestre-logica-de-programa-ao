@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+  float litros,km,km_litro;
+
+   printf("informe a quantidade de litros consumidos: \n");
+   scanf("%f",&litros);
+
+   printf("informe os quilometros rodados : ");
+   scanf("%f", &km);
+
+   km_litro=km/litros;
+
+   printf("a taxa de quilometros rodados e : %.2f \n",km_litro);
+
+
+}
