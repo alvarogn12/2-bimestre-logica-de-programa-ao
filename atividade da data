@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int ano, mes, dia;
+
+    printf("Informe o ano:\n");
+    scanf("%d", &ano);
+
+    printf("Informe o mês:\n");
+    scanf("%d", &mes);
+
+    printf("Informe o dia:\n");
+    scanf("%d", &dia);
+
+    printf("A data formada é: %02d/%02d/%d\n", dia, mes, ano);
+}
