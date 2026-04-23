@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+// Definindo a estrutura com os campos da sua foto
+struct Aluno {
+    int id;
+    char nome[20];
+    char matricula[15];
+    char turma[5];
+};
+
+int main() {
+    // Criando a lista de alunos com os dados da imagem
+    struct Aluno lista[10] = {
+        {1, "Ana", "13457", "1A"},
+        {2, "Maria", "84576", "2B"},
+        {3, "Julia", "13952", "3A"},
+        {4, "Joana", "54362", "2A"},
+        {5, "Aryanne", "67895", "1B"},
+        {6, "Marta", "101120", "3B"},
+        {7, "Livia", "220304", "3B"},
+        {8, "Luzia", "700120", "1A"},
+        {9, "Joao", "112399", "2A"},
+        {10, "Amanda", "696763", "2B"}
+    };
+
+    // Cabeçalho da tabela
+    printf("ID  | NOME            | MATRICULA  | TURMA\n");
+    printf("------------------------------------------\n");
+
+    // Loop para imprimir cada linha do "banco de dados"
+    for (int i = 0; i < 10; i++) {
+        printf("%02d  | %-15s | %-10s | %s\n", 
+                lista[i].id, 
+                lista[i].nome, 
+                lista[i].matricula, 
+                lista[i].turma);
+    }
+
+    return 0;
+}
